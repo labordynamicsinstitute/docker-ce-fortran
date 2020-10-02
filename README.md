@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The CE-Fortran website wants to install numerous programs, and executes a Linux script as root. 
+The [CE-Fortran website](https://www.ce-fortran.com/installation-linux/) wants to install numerous programs, and executes a Linux script as root. 
 This Docker image is meant to isolate and stabilize that environment, and should be portable across
 multiple operating system, as long as [Docker](https://docker.com) is available.
 
@@ -13,7 +13,7 @@ wget $(cat SRC.txt)
 docker build  .
 ```
 
-The resulting docker image can be uploaded to [Docker Hub](https://docker.io), if desired, Find the image ID, this will also have been the output of the `docker build` command.
+The resulting docker image can be uploaded to [Docker Hub](https://hub.docker.com/), if desired, Find the image ID, this will also have been the output of the `docker build` command.
 
 ```
 ...
@@ -48,7 +48,7 @@ docker push $MYHUBID/ce-fortran
 
 ## Using the image
 
-If using the pre-built image on [Docker Hub](https://docker.io):
+If using the pre-built image on [Docker Hub](https://hub.docker.com/repository/docker/larsvilhuber/ce-fortran):
 
 ```
 docker run -it -rm larsvilhuber/ce-fortran
