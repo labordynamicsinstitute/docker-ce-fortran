@@ -61,3 +61,7 @@ docker run -it --rm larsvilhuber/ce-fortran
 ```
 
 You can now start to compile code.
+
+## NOTE
+
+This entire process could be automated, using [Travis-CI](https://docs.travis-ci.com/user/docker/#pushing-a-docker-image-to-a-registry) or [Github Actions](https://github.com/marketplace/actions/build-and-push-docker-images). Not done yet, see #1. 
