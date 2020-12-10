@@ -6,6 +6,17 @@ The [CE-Fortran website](https://www.ce-fortran.com/installation-linux/) wants t
 This Docker image is meant to isolate and stabilize that environment, and should be portable across
 multiple operating system, as long as [Docker](https://docker.com) is available.
 
+## Using the CE Fortran Docker Image
+
+- install a container runtime ([Docker](https://docs.docker.com/get-docker/) is popular, but others exist)
+- create a container using the image described on this page (the exact method depends on your container runtime)
+
+```
+docker run -it --rm larsvilhuber/ce-fortran
+```
+
+Any additional steps on this page are optional for the casual user, and are only relevant for individuals interested in how to create and maintain the image themselves.
+
 ## Build
 
 ```
